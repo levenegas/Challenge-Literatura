@@ -30,28 +30,7 @@ Este proyecto es una aplicación Java desarrollada con **Spring Boot** que consu
 ---
 
 ## 🗃️ **Estructura del Proyecto**
-main
-└── java
-    └── com.alura.literatura
-        ├── config
-        │   └── WebClientConfig
-        ├── models
-        │   ├── Author
-        │   ├── Book
-        │   └── BookResponse
-        ├── principal
-        │   └── Main
-        ├── repositories
-        │   ├── AuthorRepository
-        │   └── BookRepository
-        ├── service
-        │   ├── AuthorService
-        │   └── BookService
-        └── utilities
-            └── LiteraturaApplication
-
-resources
-└── application.properties
+![image](https://github.com/user-attachments/assets/5326d24c-ea16-4890-8dfb-b4604a8cfacb)
 
 ---
 
