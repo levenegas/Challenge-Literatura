@@ -43,6 +43,7 @@ Este proyecto es una aplicación Java desarrollada con **Spring Boot** que consu
  -Configuración
 
 Archivo src/main/resources/application.properties:
+
     spring.datasource.url=jdbc:postgresql://localhost:5432/DDBB_Books
     spring.datasource.username=${DB_USER}
     spring.datasource.password=${DB_PWD}
@@ -54,7 +55,23 @@ Archivo src/main/resources/application.properties:
 
 ---
 
+## 🧪 Ejemplo de ejecución
 
+![image](https://github.com/user-attachments/assets/2ae4658e-cb60-4674-b4d3-c29bb97dc965)
+
+![image](https://github.com/user-attachments/assets/24540a22-49ad-41a3-9074-84494ef50f7e)
+
+![image](https://github.com/user-attachments/assets/8bf70bc9-f868-46b2-ac55-e298888bf9b3)
+
+![image](https://github.com/user-attachments/assets/34069359-48a2-4082-8738-2d01950e21d5)
+
+![image](https://github.com/user-attachments/assets/b846368d-ebfb-452c-b295-3efc9f96fbe2)
+
+---
+
+## 🧪 Esquema tablas BBDD
+
+![image](https://github.com/user-attachments/assets/ba95c515-60fa-4027-a237-0085a6c58f0f)
 
 ---
 
