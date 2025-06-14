@@ -29,19 +29,56 @@ Este proyecto es una aplicación Java desarrollada con **Spring Boot** que consu
 
 ---
 
-## 🧠 **Estructura del Proyecto**
+## 🗃️ **Estructura del Proyecto**
+main
+└── java
+    └── com.alura.literatura
+        ├── config
+        │   └── WebClientConfig
+        ├── models
+        │   ├── Author
+        │   ├── Book
+        │   └── BookResponse
+        ├── principal
+        │   └── Main
+        ├── repositories
+        │   ├── AuthorRepository
+        │   └── BookRepository
+        ├── service
+        │   ├── AuthorService
+        │   └── BookService
+        └── utilities
+            └── LiteraturaApplication
 
-| Archivo / Clase             | Descripción                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| `WebClientConfig.java`     | Configura el `WebClient` con la URL base de Gutendex.                      |
-| `Author.java` / `Book.java`| Entidades JPA que representan autores y libros.                            |
-| `AuthorRepository.java`    | Métodos para consultar autores en la base de datos.                        |
-| `BookRepository.java`      | Repositorio para los libros.                                               |
-| `AuthorService.java`       | Lógica para consultar y filtrar autores.                                   |
-| `BookService.java`         | Lógica para importar libros, asociar autores, filtrar por idioma, etc.     |
-| `BookResponse.java`        | Clase auxiliar para mapear la respuesta JSON paginada de Gutendex.         |
+resources
+└── application.properties
 
 ---
 
-## 🛠️ **Cómo Ejecutar el Proyecto**
+## 🗃️ **Dependencias principales**
+
+- spring-boot-starter-data-jpa
+- postgresql (driver)
+- spring-boot-starter-webflux
+- spring-boot-starter-test (scope test)
+ -Configuración
+
+Archivo src/main/resources/application.properties:
+    spring.datasource.url=jdbc:postgresql://localhost:5432/DDBB_Books
+    spring.datasource.username=${DB_USER}
+    spring.datasource.password=${DB_PWD}
+    spring.datasource.driver-class-name=org.postgresql.Driver
+    
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=false
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+---
+
+
+
+---
+
+##📜 Licencia Este proyecto es de uso libre con fines educativos. Puedes modificarlo o distribuirlo con fines no comerciales. 
+Se recomienda incluir mención al autor (Luis Venegas) original si se reutiliza públicamente.
 
